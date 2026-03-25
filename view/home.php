@@ -59,7 +59,7 @@ $categorias_aromas = [
             <!-- CAROUSEL -->
 
 
-            <div id="carouselExampleIndicators" class="carousel slide">
+            <div id="carouselExampleIndicators" class="carousel slide" >
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -67,7 +67,7 @@ $categorias_aromas = [
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/Captura de tela 2026-03-19 110420.png" class="d-block w-100" alt="...">
+                        <img src="img/Captura de tela 2026-03-19 110420.png" class="d-block w-100" alt="..." >
                     </div>
                     <div class="carousel-item">
                         <img src="img/Captura de tela 2026-03-19 111242.png" class="d-block w-100" alt="...">

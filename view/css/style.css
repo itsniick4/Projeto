@@ -17,10 +17,11 @@ body {
 
 .app-container {
     width: 100%;
-    max-width: 500px;
+    max-width: 500px; 
     background-color: #faf7f2;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-    min-height: 100%;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
+    min-height: 100vh;
+    margin: 0 auto; 
 }
 
 /* Header */
@@ -28,11 +29,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-}
+    padding: 20px 50px; }
 
 .logo h1 {
-    font-size: 28px;
+    font-size: 35px;
     font-weight: 400;
     line-height: 1;
     letter-spacing: -0.5px;
@@ -45,7 +45,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: #555;
-    margin-top: 3px;
+    margin-top: 0px;
 }
 
 .nav-menu {
@@ -62,7 +62,7 @@ header {
 .nav-links a {
     text-decoration: none;
     color: #1a1a1a;
-    font-size: 14px;
+    font-size: 8px;
 }
 
 .icons {
@@ -102,10 +102,9 @@ header {
 /* Hero Banner */
 .hero {
     position: relative;
-    padding: 0 20px;
-    margin-top: 10px;
+    padding: 0; 
+    margin-top: 0; /* Garante que não haja espaço entre o menu e a foto */
 }
-
 
 /* Sessões Velas e Aromas */
 .velas-section {
@@ -118,7 +117,7 @@ header {
     font-size: 24px;
     font-weight: 400;
     letter-spacing: 1px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 .categorias {
@@ -181,7 +180,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 .aromas-section {
@@ -190,6 +189,7 @@ header {
     position: relative;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 150px;
 }
 
 
