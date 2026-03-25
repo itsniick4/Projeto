@@ -59,7 +59,7 @@ $categorias_aromas = [
             <!-- CAROUSEL -->
 
 
-            <div id="carouselExampleIndicators" class="carousel slide" >
+            <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -67,7 +67,7 @@ $categorias_aromas = [
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/Captura de tela 2026-03-19 110420.png" class="d-block w-100" alt="..." >
+                        <img src="img/Captura de tela 2026-03-19 110420.png" class="d-block w-100" alt="..." a>
                     </div>
                     <div class="carousel-item">
                         <img src="img/Captura de tela 2026-03-19 111242.png" class="d-block w-100" alt="...">
@@ -96,47 +96,45 @@ $categorias_aromas = [
 
             <div class="categorias">
                 <?php foreach ($categorias_velas as $vela): ?>
-                    <div class="categoria-item">
+
+                    <a href="produto.Velas.php" class="categoria-item" style="text-decoration: none; color: inherit;">
                         <div class="img-anel">
                             <img src="<?= $vela['imagem'] ?>" alt="<?= $vela['nome'] ?>">
                         </div>
                         <span><?= $vela['nome'] ?></span>
-                    </div>
-                <?php endforeach; ?>
+                    
+                    </a> <?php endforeach; ?>
             </div>
-        </div>
 
 
+            <!--Video de mkt-->
+            <div class="video-section">
 
-        <!--Video de mkt-->
-        <div class="video-section">
+                <video src="img/videos/Criação_de_Vídeo_de_Velas_Aromáticas.mp4" class="w-100 rounded" autoplay muted loop playsinline></video>
 
-            <video src="img/videos/Criação_de_Vídeo_de_Velas_Aromáticas.mp4" class="w-100 rounded" autoplay muted loop playsinline></video>
-
- </div>
+            </div>
 
             <!--Parte dos aromas-->
             <div class="aromas-section">
                 <h2>AROMAS</h2>
-                        
+
                 <div class="categorias">
                     <?php foreach ($categorias_aromas as $aroma): ?>
-                        <div class="categoria-item">
+
+                        <a href="produto.Aromas.php" class="categoria-item" style="text-decoration: none; color: inherit;">
                             <div class="img-anel">
                                 <img src="<?= $aroma['imagem'] ?>" alt="<?= $aroma['nome'] ?>">
                             </div>
                             <span><?= $aroma['nome'] ?></span>
-                        </div>
+                        </a>
                     <?php endforeach; ?>
                 </div>
 
-
-
             </div>
-       
 
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 

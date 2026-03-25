@@ -93,11 +93,17 @@ header {
     transform: translateY(-8px);
 }
 
-.icon-hamburger {
-    font-size: 20px;
-    cursor: pointer;
-    font-family: sans-serif;
+.icon.profile{
+
+ color: rgb(85, 84, 27);
+  text-decoration: none;
+   display: inline-flex;
+    align-items: center;
+                             
+
+
 }
+
 
 /* Hero Banner */
 .hero {
