@@ -1,0 +1,123 @@
+<?php
+// Lista de Velas com os links dinâmicos
+$categorias_velas = [
+    [
+        "nome" => "Aromáticas",
+        "imagem" => "img/Captura de tela 2026-03-19 111242.png",
+        "link" => "view/produto.Velas.php?tipo=aromatica" 
+    ],
+    [
+        "nome" => "Esculturais",
+        "imagem" => "img/Captura de tela 2026-03-19 110420.png",
+        "link" => "view/produto.Velas.php?tipo=escultural" 
+    ],
+    [
+        "nome" => "Massagem",
+        "imagem" => "img/Captura de tela 2026-03-19 111359.png",
+        "link" => "view/produto.Velas.php?tipo=massagem" 
+    ]
+];
+
+// Lista de Aromas com os links dinâmicos
+$categorias_aromas = [
+    [
+        "nome" => "Cítricos",
+        "imagem" => "img/Captura de tela 2026-03-19 113117.png",
+        "link" => "view/produto.Aromas.php?tipo=citrico"
+    ],
+    [
+        "nome" => "Amadeirados",
+        "imagem" => "img/Captura de tela 2026-03-24 085156.png",
+        "link" => "view/produto.Aromas.php?tipo=amadeirado"
+    ],
+    [
+        "nome" => "Florais",
+        "imagem" => "img/Captura de tela 2026-03-19 113102.png",
+        "link" => "view/produto.Aromas.php?tipo=floral"
+    ]
+];
+?>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serena - Lumière & Parfum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <div class="hero">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/Captura de tela 2026-03-19 110420.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Captura de tela 2026-03-19 111242.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="velas-section">
+            <h2>VELAS</h2>
+
+            <div class="categorias">
+                <?php foreach ($categorias_velas as $vela): ?>
+                    <a href="<?= $vela['link'] ?>" class="categoria-item" style="text-decoration: none; color: inherit;">
+                        <div class="img-anel">
+                            <img src="<?= $vela['imagem'] ?>" alt="<?= $vela['nome'] ?>">
+                        </div>
+                        <span><?= $vela['nome'] ?></span>
+                    </a> 
+                <?php endforeach; ?>
+            </div>
+        </div>
+
+        <div class="video-section">
+            <video src="img/videos/Criação_de_Vídeo_de_Velas_Aromáticas.mp4" class="w-100 rounded" autoplay muted loop playsinline></video>
+        </div>
+
+        <div class="aromas-section">
+            <h2>AROMAS</h2>
+
+            <div class="categorias">
+                <?php foreach ($categorias_aromas as $aroma): ?>
+                    <a href="<?= $aroma['link'] ?>" class="categoria-item" style="text-decoration: none; color: inherit;">
+                        <div class="img-anel">
+                            <img src="<?= $aroma['imagem'] ?>" alt="<?= $aroma['nome'] ?>">
+                        </div>
+                        <span><?= $aroma['nome'] ?></span>
+                    </a>
+                <?php endforeach; ?>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
